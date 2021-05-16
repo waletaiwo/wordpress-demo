@@ -1,0 +1,12 @@
+variable "region" {
+  type        = string
+  description = "aws region"
+}
+variable "instance_ami" {
+  type        = string
+  description = "wodpress instance ami"
+}
+variable "instance_type" {
+  type        = string
+  description = "instance type for wordpress"
+}
