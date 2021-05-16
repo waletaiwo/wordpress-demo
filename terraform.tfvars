@@ -1,3 +1,3 @@
 region        = "us-east-1"
-instance_ami  = "ami-0fa6f80e98668f9e4 "
-instance_type = "t2-micro"
+instance_ami  = "ami-05672237cf5f87114"
+instance_type = "t2.micro"

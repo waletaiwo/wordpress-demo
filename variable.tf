@@ -4,7 +4,7 @@ variable "region" {
 }
 variable "instance_ami" {
   type        = string
-  description = "wodpress instance ami"
+  description = "wordpress instance ami"
 }
 variable "instance_type" {
   type        = string
