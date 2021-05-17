@@ -10,3 +10,7 @@ variable "instance_type" {
   type        = string
   description = "instance type for wordpress"
 }
+variable "instance_count" {
+  type        = number
+  description = "number of ec2 instances to deploy"
+}
