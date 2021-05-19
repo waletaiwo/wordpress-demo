@@ -29,3 +29,4 @@ or Set secrets via environment variables in your cli
 export TF_VAR_AWS_ACCESS_KEY_ID= add access key value here
 export TF_VAR_SECRET_ACCESS_KEY= add secret key value here
 ```
+Use either of the two options above not the two. 
