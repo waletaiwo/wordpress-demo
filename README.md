@@ -1,7 +1,7 @@
 # wordpress-demo
  
  ## Description 
- This is a Terraform configuration template for a wordpress website built with high availability in mind.
+ This is a Terraform configuration file for a wordpress website built with high availability in mind.
  I achieved high availability by attaching an Elastic load balancer to my Auto Scaling group to distributes incoming application traffic across all healthy EC2 instances that are running and scalability as need arises.
 
  ## Installation
