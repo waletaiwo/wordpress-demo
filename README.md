@@ -1,8 +1,8 @@
-# wordpress-demo
+# Wordpress-demo
  
  ## Description 
- This is a Terraform configuration file for a wordpress website built with high availability in mind.
- I achieved high availability by attaching an Elastic load balancer to my Auto Scaling group to distributes incoming application traffic across all healthy EC2 instances that are running and scalability as need arises.
+ This is an infrastructure as a code project for a highly available wordpress application deployed using Terraform.
+ High availability was achieved by attaching an Elastic load balancer to my Auto Scaling group to distributes incoming application traffic across all healthy EC2 instances that are running and scalability as need arises.
 
  ## Installation
 Run
@@ -30,3 +30,6 @@ export TF_VAR_AWS_ACCESS_KEY_ID= add access key value here
 export TF_VAR_SECRET_ACCESS_KEY= add secret key value here
 ```
 Use either of the two options above not the two. 
+
+
+
