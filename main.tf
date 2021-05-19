@@ -2,7 +2,6 @@ provider "aws" {
   region = var.region
 }
 
-
 resource "aws_default_vpc" "default" {
 }
 resource "aws_default_subnet" "default_az1" {
@@ -35,7 +34,6 @@ resource "aws_security_group" "wordpress" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
 resource "aws_elb" "wordpress" {
   name            = "wordpress-elb"
   subnets         = [aws_default_subnet.default_az1.id, aws_default_subnet.default_az2.id, aws_default_subnet.default_az3.id, aws_default_subnet.default_az4.id]
@@ -46,17 +44,14 @@ resource "aws_elb" "wordpress" {
     lb_port           = 80
     lb_protocol       = "http"
   }
-
 }
 resource "aws_launch_template" "wordpress" {
   name_prefix   = "wordpress"
   image_id      = var.image_id
   instance_type = var.instance_type
 }
-
 resource "aws_autoscaling_group" "wordpress" {
   availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d"]
-  #vpc_zone_identifier = [aws_default_subnet.default_az1.id, aws_default_subnet.default_az2.id, aws_default_subnet.default_az3.id, aws_default_subnet.default_az4.id]
   desired_capacity = var.desired_capacity
   max_size         = var.max_size
   min_size         = var.min_size
