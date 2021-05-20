@@ -12,7 +12,7 @@ terraform init
 After this, we have to check what kind of resources are going to deploy. We can check this using
 ``` terraform
 terraform plan
-``` 
+```  
 
 Now we are going to apply these settings using
 
