@@ -5,7 +5,7 @@
  High availability was achieved by attaching an Elastic load balancer to my Auto Scaling group to distributes incoming application traffic across all healthy EC2 instances that are running and scalability as need arises.
 
  ## Installation
-To download the provider we need to run following command
+To download the provider we need to run the following command
  ```terraform
 terraform init
 ```
