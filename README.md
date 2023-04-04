@@ -39,3 +39,5 @@ Use either of the two options above not the two.
 
 
 
+# wordpress-demo
+This is a Terraform configuration template for a wordpress website. 
