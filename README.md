@@ -37,7 +37,3 @@ export TF_VAR_SECRET_ACCESS_KEY= add secret key value here
 ```
 Use either of the two options above not the two. 
 
-
-
-# wordpress-demo
-This is a Terraform configuration template for a wordpress website. 
